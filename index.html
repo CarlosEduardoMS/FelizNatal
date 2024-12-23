@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎄 Feliz 🎁 Natal 🎄</title>
+
+    <style>
+        body {
+            /*background-color: red;*/
+            background-image: url(https://i.pinimg.com/originals/20/de/3c/20de3ce39301206e27c89876ebba23ca.gif);
+        }
+
+        .painelF {
+            margin: auto;
+            /*background-color: white;*/
+            background-image: url(https://acdn.mitiendanube.com/stores/001/630/548/products/c94ae20b442f52f7c518da52a52beb03-52b378934890d411f416178787358465-1024-1024.webp);
+            /*pacity: 0.5;*/
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        #sim {
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: -50px;
+        }
+
+        #nao {
+            position: absolute;
+            height: 40px;
+            width: 60px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            margin-left: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <div class="painelF">
+        <h1> Feliz Natal do Grinch</h1>
+
+        <img src="https://www.theodysseyonline.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vbWVkaWEucmJsLm1zL2ltYWdlP3U9JTJGbDJZV0VPZmZ5QTVnVll6ZXcuZ2lmJmhvPWh0dHBzJTNBJTJGJTJGaS5naXBoeS5jb20mcz01NDEmaD1mNzljY2EzMWJmYTNkYmNlYzQzNmJmNDUxZDY2YTkzNzYzZTBjNTU1ZDM3Zjc3ZWJiMGRlMzVhYjE1ZDRiN2VmJnNpemU9OTgweCZjPTM5Nzg0NjIxMzMiLCJleHBpcmVzX2F0IjoxNzk3NDIzMDIyfQ.J8EvRkoSrNF2r87DpefXyyzk1QUzDRfUT7AvIj1Id6M/image.jpg?=undefined&quality=80"
+            alt="" height="35%" width="70%" style="border-radius: 10px;">
+
+        <h2>Ola, eu sou uma cartinha de Feliz Natal e acho que de amor também.</h2>
+        <h2>Você gostaria de me ler ?</h2>
+        <h4>Obs: É pra clicar no não</h4>
+
+        <a href="Cartinha.html"><button id="sim"> Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não! </button>
+    </div>
+
+   
+
+    <script>
+        function fuja() {
+            var botaoNao = document.getElementById("nao")
+
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+
+
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
